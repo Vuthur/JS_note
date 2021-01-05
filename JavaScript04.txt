@@ -1,0 +1,15 @@
+一. BOM对象
+    1. 浏览器对象
+    2.对象方法
+        1). 
+        2).定时方法
+            1. 周期性定时器
+                开启定时器(setTnterval(function, interval))
+                参数:function表示要执行函数, interval为时间间隔, 默认以毫秒为单位
+                返回值: 返回定时器的id
+                应用: 多应用于网页上动态变换
+
+            2. 一次性定时器
+                setTimeOut(func, timeout)
+
+    3. 对象属性

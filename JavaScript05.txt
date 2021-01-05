@@ -1,0 +1,69 @@
+jQuery
+二. 使用
+    1. 引入
+        pass
+
+    2. 工厂函数($())
+        pass
+
+    3.原生JavaScript对象与jQuery对象
+        pass
+
+    4. jQuery获取元素
+        注意: 相邻兄弟选择器(h1 + p): 只匹配相邻的, 并且前后都可以匹配(h1符合, p符合), 结果p;
+        通用兄弟选择器(h1~li): 匹配h1后面符合的所有与标签, 可以不相邻.
+
+    5. 操作元素内容
+        pass
+
+    6. 操作标签属性
+        attr(atrrName, value)
+            至少传一个参数attrName
+            只写一个参数(atrrName), 获取该属性的值, 没有值返回undefined, 有值返回对应值
+            两个参数则可以设置该属性    
+            的值
+        prop(atrrName, value)
+            至少传一个参数attrName
+            只写一个参数(atrrName), 则判断该属性有没有值, 有值返回true, 否则返回false
+            两个参数则可以设置该属性的值
+
+    7. 操作标签样式
+        函数返回值为操作的对象
+
+    8. 元素的创建, 添加, 删除
+        元素创建步骤:
+            (1). 使用$()创建元素
+            (2). 投放元素
+                after/ before  prepend/ append
+                注意: 将目标元素作为子元素投放在元素(一定要为jq对象)对象内(注意body的使用)
+                $obj.prepend($newObj)/ $obj.append($newObj)
+            (3). 移除元素
+                $obj.remove() 没有参数
+        注意:同一个页面对象只能出现一次, 多次使用时以最后一次为准
+
+    9. 动画效果
+        (1). 显示与隐藏
+        show(speed, callback)
+            参数1: 速度, 单位毫秒1000, 表示1秒
+            参数2: 回调函数, show执行完成自动执行的函数
+            回调函数定义:
+                pass(面试题有)
+        hide(speed, callback)
+
+        animate(css, speed, callback)
+        css为 css对象, styles
+        ...
+
+    10. 数据与对象遍历
+        $(选择穷).each(func(index, obj){
+            ...
+        })
+        遍历选择器所获取到的元素, 直接获取其索引值,与js对象
+
+        $.each(obj, func(index, obj){
+            ...
+        }))
+        遍历obj内容, 获取索引值与对应值
+
+    11. jQuery事件处理
+        ...
